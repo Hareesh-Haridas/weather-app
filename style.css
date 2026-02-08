@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background: #2a4c9b;
+    background: linear-gradient(90deg, rgba(42, 76, 155, 1) 0%, rgba(214, 214, 214, 1) 100%, rgba(164, 184, 110, 1) 100%, rgba(237, 221, 83, 1) 59%, rgba(87, 199, 133, 1) 100%);
+}
+
+.top-container {
+    display: flex;
+
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 382px;
+
+}
+
+.top-container h3,
+.top-container i {
+
+    display: inline-block;
+    color: white;
+
+
+}
+
+.location-icon {
+    margin-right: 10px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.input-box {
+    height: 60px;
+    width: 767px;
+    border: 1px solid rgb(220, 228, 255);
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+
+    /* border: none; */
+}
+
+form input {
+    background-color: transparent;
+
+    border: none;
+    margin-left: 20px;
+}
+
+#search-city::placeholder {
+    color: rgb(226, 226, 226);
+    font-size: 17px;
+}
+
+form input:focus {
+    outline: none;
+    color: white;
+}
+
+button {
+    width: 39px;
+    height: 39px;
+    background-color: rgba(255, 255, 255, 0.3);
+    ;
+    border: #949494;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+
+
+}
+
+button i {
+    color: white;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.weather-card {
+    margin-top: 31px;
+    height: 509px;
+    width: 767px;
+    /* border: 1px solid black; */
+    border-radius: 27px;
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(72, 72, 181, 1) 0%, rgba(107, 195, 209, 1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.weather-icon {
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather-icon img{
+    height: 150px;
+    width: 150px;
+}
