@@ -87,6 +87,7 @@ button i {
 
 section {
     display: flex;
+
     justify-content: center;
 }
 
@@ -100,7 +101,14 @@ section {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(72, 72, 181, 1) 0%, rgba(107, 195, 209, 1) 100%);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+
+.weather-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .weather-icon {
@@ -111,7 +119,65 @@ section {
     justify-content: center;
     align-items: center;
 }
-.weather-icon img{
+
+.weather-icon img {
     height: 150px;
     width: 150px;
+}
+
+.weather-info {
+    height: 150px;
+    width: 170px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 41px;
+    color: white;
+}
+
+#celcious {
+
+    font-size: 77px;
+    font-weight: 200;
+}
+
+#weather {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#feels-like {
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.weather-details {
+    width: 767px;
+    height: 200px;
+    /* border: 1px solid black; */
+    display: flex;
+  
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+}
+.detail-box{
+    height: 100px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 18px;
+
+}
+
+.icon img{
+    height: 40px;
+    width: 40px;
+}
+.h-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
 }
