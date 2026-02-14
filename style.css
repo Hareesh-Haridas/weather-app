@@ -72,7 +72,7 @@ button {
     width: 39px;
     height: 39px;
     background-color: rgba(255, 255, 255, 0.3);
-    ;
+    cursor: pointer;
     border: #949494;
     margin-top: 10px;
     margin-right: 10px;
@@ -157,27 +157,42 @@ section {
     height: 200px;
     /* border: 1px solid black; */
     display: flex;
-  
+
     justify-content: space-evenly;
     align-items: center;
 
-    
+
 }
-.detail-box{
+
+.detail-box {
     height: 100px;
     width: 150px;
-    border: 1px solid black;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 18px;
+     box-sizing: border-box;
+    padding-top: 13px;
+    background-color: rgba(255, 255, 255, 0.1);
 
 }
 
-.icon img{
-    height: 40px;
-    width: 40px;
+.icon img {
+    height: 35px;
+    width: 35px;
+    margin-top: 3px;
 }
-.h-heading{
+
+.h-heading {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 5px;
+    color: rgb(249, 249, 249);
 }
+
+.h-percentage {
+    margin-top: 4px;
+    margin-left: 20px;
+    color: white;
+    font-size: 21px;
+}
+
