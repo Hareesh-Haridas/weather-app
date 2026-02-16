@@ -10,11 +10,10 @@ body {
 }
 
 .top-container {
-    display: flex;
-
-    margin-top: 50px;
+   display: flex;
+    justify-content: center;
+    margin-top: 40px;
     margin-bottom: 20px;
-    margin-left: 382px;
 
 }
 
@@ -41,7 +40,8 @@ body {
 
 .input-box {
     height: 60px;
-    width: 767px;
+    width: 90%;
+    max-width: 767px;
     border: 1px solid rgb(220, 228, 255);
     border-radius: 14px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -57,15 +57,24 @@ form input {
     border: none;
     margin-left: 20px;
 }
-
-#search-city::placeholder {
-    color: rgb(226, 226, 226);
+#search-city{
+     color: white;
     font-size: 17px;
+    background-color: transparent;
+    border: none;
+}
+#search-city::placeholder {
+   color: rgb(226, 226, 226);
+    font-size: 17px;
+}
+#search-city:focus {
+    outline: none;
 }
 
 form input:focus {
     outline: none;
     color: white;
+    font-size: 17px;
 }
 
 button {
@@ -94,7 +103,8 @@ section {
 .weather-card {
     margin-top: 31px;
     height: 509px;
-    width: 767px;
+     width: 90%;
+    max-width: 767px;
     /* border: 1px solid black; */
     border-radius: 27px;
     background: #020024;
@@ -123,17 +133,19 @@ section {
 .weather-icon img {
     height: 150px;
     width: 150px;
+    display: none;
 }
 
 .weather-info {
     height: 150px;
-    width: 170px;
-    /* border: 1px solid black; */
+    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 41px;
     color: white;
+    align-items: center;
+    padding-left: 0;
+    text-align: center;
 }
 
 #celcious {
@@ -145,21 +157,21 @@ section {
 #weather {
     font-size: 20px;
     font-weight: 100;
+    
 }
 
 #feels-like {
     margin-top: 5px;
     padding-left: 10px;
+    margin-left: 10px;
 }
 
 .weather-details {
-    width: 767px;
-    height: 200px;
-    /* border: 1px solid black; */
     display: flex;
-
-    justify-content: space-evenly;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
 
 
 }
@@ -196,3 +208,43 @@ section {
     font-size: 21px;
 }
 
+@media (max-width: 600px){
+      .input-box {
+        height: 50px;
+    }
+
+    #celcious {
+        font-size: 50px;
+    }
+
+    #weather {
+        font-size: 16px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .weather-details {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .detail-box {
+        width: 140px;
+        height: 90px;
+    }
+
+    .top-container h3 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 900px) {
+
+    .weather-card {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .detail-box {
+        width: 160px;
+    }
+}
